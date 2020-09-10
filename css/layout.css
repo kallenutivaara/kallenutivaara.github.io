@@ -201,7 +201,7 @@ ul#nav li.current a { color: #11ABB0; }
 }
 #about p {
    line-height: 30px;
-   color: #7A7A7A;
+   color: #bfbfbf;
 }
 #about .profile-pic {
    position: relative;
@@ -636,7 +636,7 @@ call-to-action .button {
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-   background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
+   background: #161415 url("https://images.unsplash.com/photo-1498898733745-c8c6df58e4ba?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2389&q=80") no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    background-attachment: fixed;
@@ -678,7 +678,6 @@ call-to-action .button {
 }
 #testimonials blockquote:before { content: none; }
 #testimonials blockquote p {
-   font-family: 'librebaskerville-italic', serif;
    padding: 0;
    font-size: 24px;
    line-height: 48px;
