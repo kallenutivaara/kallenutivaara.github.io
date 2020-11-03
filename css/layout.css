@@ -323,7 +323,7 @@ ul#nav li.current a { color: #11ABB0; }
 }
 
 .photoshop {
-  	width: 84%;
+  	width: 30%;
   	-moz-animation: photoshop 2s ease;
   	-webkit-animation: photoshop 2s ease;
 }
@@ -343,22 +343,22 @@ ul#nav li.current a { color: #11ABB0; }
   	-webkit-animation: illustrator 2s ease;
 }
 .wordpress {
-  	width: 78%;
+  	width: 30%;
   	-moz-animation: wordpress 2s ease;
   	-webkit-animation: wordpress 2s ease;
 }
 .css {
-  	width: 72%;
+  	width: 50%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
 .html5 {
-  	width: 98%;
+  	width: 90%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
 .jquery {
-  	width: 98%;
+  	width: 60%;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
 }
@@ -367,15 +367,19 @@ ul#nav li.current a { color: #11ABB0; }
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
 }
-
 .msft {
-  	width: 92%;
+  	width: 90%;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
 }
+
 @-moz-keyframes photoshop {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 30%;  }
+}
+@-moz-keyframes msft {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
 }
 @-moz-keyframes illustrator {
   0%   { width: 0px;  }
@@ -383,7 +387,7 @@ ul#nav li.current a { color: #11ABB0; }
 }
 @-moz-keyframes wordpress {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 30%;  }
 }
 @-moz-keyframes css {
   0%   { width: 0px;  }
@@ -391,16 +395,19 @@ ul#nav li.current a { color: #11ABB0; }
 }
 @-moz-keyframes html5 {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 90%;  }
 }
 @-moz-keyframes jquery {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 60%;  }
 }
-
+@-webkit-keyframes msft {
+  0%   { width: 0px;  }
+  100% { width: 90%;  }
+}
 @-webkit-keyframes photoshop {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 30%;  }
 }
 @-webkit-keyframes illustrator {
   0%   { width: 0px;  }
@@ -408,7 +415,7 @@ ul#nav li.current a { color: #11ABB0; }
 }
 @-webkit-keyframes wordpress {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 30%;  }
 }
 @-webkit-keyframes css {
   0%   { width: 0px;  }
@@ -416,11 +423,11 @@ ul#nav li.current a { color: #11ABB0; }
 }
 @-webkit-keyframes html5 {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 90%;  }
 }
 @-webkit-keyframes jquery {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 60%;  }
 }
 
 /* ------------------------------------------------------------------ */
