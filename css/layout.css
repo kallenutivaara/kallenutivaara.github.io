@@ -220,9 +220,9 @@ ul#nav li.current a { color: #11ABB0; }
 }
 #about .profile-pic {
    position: relative;
-   width: 250px;
+   width: 20%;
    height: 250px;
-   border-radius: 20%;
+   border-radius: 10%;
 }
 #about .contact-details { width: 41.66667%; }
 #about .download {
