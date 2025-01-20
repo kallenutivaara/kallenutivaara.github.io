@@ -338,7 +338,7 @@ ul#nav li.current a { color: #11ABB0; }
 }
 
 .photoshop {
-  	width: 30%;
+  	width: 50%;
   	-moz-animation: photoshop 2s ease;
   	-webkit-animation: photoshop 2s ease;
 }
@@ -358,7 +358,7 @@ ul#nav li.current a { color: #11ABB0; }
   	-webkit-animation: illustrator 2s ease;
 }
 .wordpress {
-  	width: 30%;
+  	width: 50%;
   	-moz-animation: wordpress 2s ease;
   	-webkit-animation: wordpress 2s ease;
 }
