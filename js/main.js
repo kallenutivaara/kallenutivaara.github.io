@@ -57,5 +57,10 @@
     }).catch(function () { cv.remove(); });
   }
 
-  document.getElementById('year').textContent = new Date().getFullYear();
+  var now = new Date();
+  document.getElementById('year').textContent = now.getFullYear();
+
+  // Alter automatisch berechnen (Geburtstag: 26.05.2001)
+  var age = now.getFullYear() - 2001 - ((now.getMonth() < 4 || (now.getMonth() === 4 && now.getDate() < 26)) ? 1 : 0);
+  document.querySelectorAll('[data-age]').forEach(function (el) { el.textContent = age; });
 })();
