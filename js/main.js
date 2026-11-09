@@ -47,15 +47,6 @@
     links.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s) spy.observe(s); });
   }
 
-  // Lebenslauf-Button nur zeigen, wenn die PDF existiert (Datei: lebenslauf.pdf)
-  var cv = document.querySelector('[data-cv]');
-  if (cv) {
-    var url = 'lebenslauf.pdf';
-    fetch(url, { method: 'HEAD' }).then(function (r) {
-      if (r.ok) { cv.href = url; cv.setAttribute('download', 'Lebenslauf-Kalle-Nutivaara.pdf'); }
-      else { cv.remove(); }
-    }).catch(function () { cv.remove(); });
-  }
 
   var now = new Date();
   document.getElementById('year').textContent = now.getFullYear();
