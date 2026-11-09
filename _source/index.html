@@ -1,708 +1,268 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="de-CH">
 <head>
-
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Kalle Nutivaara</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kalle Nutivaara – Lebenslauf</title>
+  <meta name="description" content="Kalle Nutivaara – Kaufmann EFZ mit Erfahrung in Administration, IT-Support und Content Creation. In Finnland geschmiedet, in Deutschland aufgewachsen, in der Schweiz zu Hause.">
+  <meta name="author" content="Kalle Nutivaara">
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:title" content="Kalle Nutivaara">
+  <meta property="og:description" content="Administration, IT-Support und Content Creation – mein Online-Lebenslauf.">
+  <meta property="og:image" content="images/kalle-og.jpg">
+  <meta name="theme-color" content="#0e3b5c">
+  <link rel="icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+  <a class="skip" href="#main">Zum Inhalt springen</a>
 
-   <!-- Header
-   ================================================== -->
-   <header id="home">
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="Zum Seitenanfang">KN<span>.</span></a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen">
+        <span></span><span></span>
+      </button>
+      <nav id="menu" class="nav__menu" aria-label="Hauptnavigation">
+        <a href="#about">Über mich</a>
+        <a href="#resume">Lebenslauf</a>
+        <a href="#creative">Kreativ</a>
+        <a href="#skills">Skills</a>
+        <a href="#references">Referenzen</a>
+        <a class="nav__cta" href="#contact">Kontakt</a>
+      </nav>
+    </div>
+  </header>
 
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <!--<li><a class="smoothscroll" href="#portfolio">Works</a></li>-->
-            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">Ich bin Kalle Nutivaara.</h1>
-            <h3>Ein 23 Jähriger mit dem Ziel bei Ihnen seine Skills unter Beweis stellen.<br>
-           	Erfahren Sie, wieso ich der Richtige für Ihr Team bin.<br>
-            Erfahren Sie mehr <a class="smoothscroll" href="#about">über mich</a>.</h3>
-            <hr />
-          <!--  <ul class="social">
-               <li><a href="https://www.instagram.com/kallenutivaara/"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-            -->
-         </div>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text reveal">
+          <p class="eyebrow">Administration · IT-Support · Content Creation</p>
+          <h1>Ich bin <span class="accent">Kalle Nutivaara.</span></h1>
+          <p class="lead">Ein 23-Jähriger mit dem Ziel, bei Ihnen seine Skills unter Beweis zu stellen. Erfahren Sie, wieso ich der Richtige für Ihr Team bin.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#about">Mehr über mich</a>
+            <a class="btn btn--ghost" href="#" data-cv>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14"/></svg>
+              Lebenslauf (PDF)
+            </a>
+          </div>
+          <ul class="flags" aria-label="Herkunft">
+            <li><span>🇫🇮</span> Finnland</li>
+            <li><span>🇩🇪</span> Deutschland</li>
+            <li><span>🇨🇭</span> Schweiz</li>
+          </ul>
+        </div>
+        <figure class="hero__photo reveal">
+          <img src="images/kalle.webp" width="640" height="800" alt="Porträt von Kalle Nutivaara">
+          <figcaption>Lufingen, Schweiz</figcaption>
+        </figure>
       </div>
+    </section>
 
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-
-      <div class="row">
-
-
-         
-
-
-         <div class="nine columns main-col">
-
-            <h2>Über Mich</h2>
-
-            <p>In Finnland geschmiedet, in Deutschland aufgewachsen, in der Schweiz zu Hause. Ich bin anpassungsfähig, weltoffen und positiv aufgestellt. Ich arbeite zielorientiert und interessiere mich stark für Prävention im Gesundheitwesen und Longevity, sowie Unternehmertum und Digitaliserung.
-                  <h2>Kontakt</h2>
-                  <p class="address">
-						   <span>Kalle Nutivaara</span><br>
-						   <span>Moosbrunnenstrasse 114<br>
-						         8426 Lufingen<br>
-                     +41 78 859 78 40<br>
-                     </span><br>
-                     <span><a href="mailto:kalle.nutivaara@gmail.com">kalle.nutivaara@gmail.com</a></span>
-					   </p>
-
-               </div>
-
-               <!--<div class="columns download">
-                  <p>
-                     <a href="#" class="button"><i class="fa fa-download"></i>Lade mein Lebenslauf runter</a>
-                  </p>
-               </div>-->
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="reveal">
+          <h2 class="section__title"><span>01</span> Über mich</h2>
+          <p class="about__quote">In Finnland geschmiedet, in Deutschland aufgewachsen, in der Schweiz zu Hause.</p>
+          <p>Ich bin anpassungsfähig, weltoffen und positiv eingestellt. Ich arbeite zielorientiert und interessiere mich stark für <strong>Prävention im Gesundheitswesen</strong> und <strong>Longevity</strong> sowie für <strong>Unternehmertum</strong> und <strong>Digitalisierung</strong>.</p>
+        </div>
+        <ul class="facts reveal">
+          <li><strong>Kaufmann EFZ</strong><span>Schulische Ausbildung</span></li>
+          <li><strong>1st &amp; 2nd Level</strong><span>IT-Support</span></li>
+          <li><strong>4 Sprachen</strong><span>DE · FI · EN · FR</span></li>
+          <li><strong>Content</strong><span>Foto, Video, Social Media</span></li>
+        </ul>
       </div>
-
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-
-<div class="row education">
-		   <div class="three columns header-col">
-			   <h1><span>Administration</span></h1>
-		   </div>
-		   <div class="nine columns main-col">
-			   <div class="row item">
-				   <div class="twelve columns">
-					   <h3>Sanacare</h3>
-					   <p class="info">Ich bin derzeit wieder bei der Sanacare tätig und unterstütze das Team in einer vielseitigen Funktion. Dabei übernehme ich administrative Aufgaben und trage zur reibungslosen Organisation und Abläufen im Arbeitsalltag bei.</p>
-				   </div>
-			   </div> 
-		   </div>
-	   </div>
- <div class="row education">
-		   <div class="three columns header-col">
-			   <h1><span>Militär</span></h1>
-		   </div>
-		   <div class="nine columns main-col">
-			   <div class="row item">
-				   <div class="twelve columns">
-					   <h3>Verteidigungskräfte Finnlands</h3>
-					   <p class="info">Ich war ein halbes Jahr im finnischen Militär, wo ich das Basic Training absolvierte und anschliessend als Übermittlungssoldat tätig war.
-						   In den letzten zwei Monaten übernahm ich die Rolle als Fotograf und Social-Media-Verantwortlicher, wodurch ich wertvolle Fähigkeiten im Bereich Kommunikation und Content Creation erlangte.
-						   Während dieser Zeit habe ich auch meine mentalen und physischen Grenzen kennengelernt und gestärkt.</p>
-				   </div>
-			   </div> 
-		   </div>
-	   </div>
-
- 	 <div class="row education">
-		   <div class="three columns header-col">
-			   <h1><span>Praktikum</span></h1>
-		   </div>
-		   <div class="nine columns main-col">
-			   <div class="row item">
-				   <div class="twelve columns">
-					   <h3>Sanacare</h3>
-					   <p class="info">Ich habe mein Praktikum erfolgreich bei der Sanacare absolviert und dabei wertvolle praktische Erfahrungen im administrativen Bereich gesammelt.
-						   Zu meinen Aufgaben gehörten unter anderem die Organisation von Dokumenten, die Bearbeitung von Korrespondenz sowie die Unterstützung bei allgemeinen Büroarbeiten.</p>
-				   </div>
-			   </div> 
-		   </div>
-	   </div>
-	   
-	   <!-- DR RÄBER AMK ----------------------------------------------- -->
-	   <div class="row education">
-		   <div class="three columns header-col">
-			   <h1><span>KV-Ausbildung</span></h1>
-		   </div>
-		   <div class="nine columns main-col">
-			   <div class="row item">
-				   <div class="twelve columns">
-					   <h3>Dr. Raebers Höhere Handelsschule</h3>
-					   <p class="info">Ich habe meine schulische Grundausbildung für meinen Kaufmann EFZ Abschluss an der Dr. Raebers Höheren Handelsschule erfolgreich abgeschlossen.
-						   Bereits im August 2022 erwarb ich das Bürofachdiplom VSH. Die schulischen Lehrabschlussprüfungen habe ich im August 2023 erfolgreich absolviert.</p>
-				   </div>
-			   </div> 
-		   </div>
-	   </div>
-	      <div class="row work">
-		   <div class="three columns header-col">
-			   <h1><span>IT-Supporter</span></h1>
-		   </div>
-		   <div class="nine columns main-col">
-			   <div class="row item">
-				   <div class="twelve columns">
-					   <h3>IT-Supporter 1st and 2nd Level</h3>
-					   <p class="info">	Ich habe umfassende Erfahrung im 1st und 2nd Level Support bei grossen Unternehmen mit Hauptsitz in der Schweiz.
-						   		Zu meinen Aufgaben gehörten die Bearbeitung von Incidents und Service Requests über ITSM-Tools (z. B. ServiceNow), die Fehleranalyse sowie die Unterstützung bei Hardware- und Softwareproblemen.
-								Dabei stand ich in engem Kontakt mit Endanwendern und VIP-Kunden, um technische Lösungen effizient und benutzerfreundlich umzusetzen.</p>
-				   </div>
-			   </div> <!-- item end -->
-		   </div> <!-- main-col end -->
-	   </div> <!-- End Work -->
-	   
-	   <div class="row work">
-		   <div class="three columns header-col">
-			   <h1><span>Lehre Informatiker</span></h1>
-		   </div>
-		   <div class="nine columns main-col">
-			   <div class="row item">
-				   <div class="twelve columns">
-					   <h3>Meine Lehre bei der Liip AG</h3>
-					   <p class="info">Während meiner Ausbildung als Informatiker Applikationsentwicklung stellte ich fest, dass mir die Arbeit in der IT Branche gefällt,
-						   jedoch nicht die Stelle als Vollzeit-Programmierer. Ich wusste bereits, dass ich in diesem Job nicht glücklich werden würde. 
-						   Daher beendete ich meine Lehre frühzeitig, um mir eine Neuorientierung zu ermöglichen.</p>
-				   </div>
-			   </div> <!-- item end -->
-		   </div> <!-- main-col end -->
-	   </div> <!-- End Work -->
-		 
-		 
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Besuchte Schulen</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Pestalozzi Grundschule</h3>
-                  <p class="info">in Deutschland, Aschaffenburg <span>&bull;</span> <em class="date">2008 - 2011</em></p>
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Primarschule Lufingen</h3>
-                  <p class="info">Mittelstufe <span>&bull;</span> <em class="date">2011 - 2014</em></p>
-
-
-               </div>
-
-            </div> <!-- item end -->
-		<div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Sekundarschule Hungerbüehl, Embrach</h3>
-                  <p class="info">im Niveau A <span>&bull;</span> <em class="date">2014 - 2017</em></p>
-
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Sprachkenntnisse</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>Deutsch</h3>
-                  <p class="info">	1. Muttersprache </p>
-               </div>
-            </div> <!-- item end -->
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>Finnisch</h3>
-                  <p class="info">	2. Muttersprache </p>
-               </div>
-            </div> <!-- item end -->
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>Englisch</h3>
-                  <p class="info">12. Jahre Schulkenntnisse <span>&bull;</span> Sprachaufenthalt in Bournemouth </p>
-               </div>
-            </div> <!-- item end -->
-            <div class="row item">
-               <div class="twelve columns">
-                  <h3>Französisch</h3>
-                  <p class="info">	6. Jahre Schulkenntnisse </p>
-               </div>
-
-            </div> <!-- item end -->
-
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-      
-
-
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <p>Durch meine angefangene Lehre und mein Interesse in der Freizeit konnte ich bereits Skills erlernen</p>
-
-				<div class="bars">
-
-				   <ul class="skills">
-           				<li><span class="bar-expand css"></span><em>CSS</em></li>
-            	 			<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-            	 			<li><span class="bar-expand jquery"></span><em>JavaScript</em></li>
-					<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
-					<li><span class="bar-expand msft"></span><em>Microsoft Office</em></li>
-					<li><span class="bar-expand filmediting"></span><em>Film Editing</em></li>
-					<li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
-				    </ul>
-
-				</div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-  
-	   <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
- <!-- 
-         <div class="three columns header-col">
-            <h1><span>Meine Projekte</span></h1>
-         </div>
-
-        
-	      <div class="nine columns main-col">
-
-            <p>Hier sind ein paar Projekte dich ich selber gefilmt und geschnitten habe. </p>
-
-		<div class="iframe-container">	
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/jzdRehahF7w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</div>
-		<div class="iframe-container">	
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/4dX_ePvuMbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		 </div>
-	      </div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-	   
-	   
-   </section> <!-- Resume Section End-->
-
-
-   <!--
-   <section id="portfolio">
-
-      <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <h1>Portfolio Coming Soon</h1>
-
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/coffee.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Ferie in Ayia Napa</h5>
-                              <p>GoPro video</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div>
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/portfolio/console.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Basketball Montage</h5>
-                              <p>GoPro Video</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div>
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/judah.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Judah</h5>
-                              <p>Webdesign</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div>
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/into-the-light.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Into The Light</h5>
-                              <p>Photography</p>
-          					   </div>
-                        </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div>
-
-            </div>
-
-         </div>
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Coffee Cup</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div>
-
-         <div id="modal-02" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Console</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div>
-
-         <div id="modal-03" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Judah</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div>
-
-         <div id="modal-04" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Into the Light</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div>
-
-         <div id="modal-05" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Farmer Boy</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div>
-
-         <div id="modal-06" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Girl</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div>
-
-         <div id="modal-07" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Origami</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div>
-
-         <div id="modal-08" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Retrocam</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div>
-
-
-      </div>
-
-   </section>-->
-
-
-   <!-- Call-To-Action Section
-   ================================================== -->
-   <section id="call-to-action">
-
-      <div class="row">
-
-         <div class="two columns header-col">
-         </div>
-
-         <div class="seven columns">
-
-            <h2><span class="lead">Lebensmottos</span></h2>
-            <p><span class="lead">"Knowledge isn't power; knowledge is only potential power. Action is power."</span></p>
-		<p><span class="lead">"To be in the 1%, you have to do what the 99% won't."</span></p>
-         </div>
-
-         <div class="three columns action">
-
-
-
-         </div>
-
-      </div>
-
-   </section> <!-- Call-To-Action Section End-->
-
-
-   <!-- Testimonials Section
-   ================================================== -->
-   <section id="testimonials">
-
-      <div class="text-container">
-
-         <div class="row">
-
-            <div class="two columns header-col">
-
-               <h1><span></span></h1>
-
-            </div>
-
-            <div class="ten columns flex-container">
-
-               <div class="flexslider">
-
-                  <ul class="slides">
-
-                     <li>
-                        <blockquote>
-                           <p>Kalle Nutivaara ist ein sehr ambitiöser Mitarbeiter. Sein Wunsch, Hindernisse zu überwinden, ist ein echter Ansporn für alle im Team. Mit seiner Kreativität und seinen einzigartigen Ideen füllt er den Raum mit Kreativität und Innovation.
-                           </p>
-                           <cite>Alexander Stöckl</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                     <li>
-                        <blockquote>
-                           <p>Ich habe mit Kalle Nutivaara die Berufsschule besucht. Seine Art immer fröhlich und motiviert zu sein, macht einem einfach Spass mit Ihm zussammenzuarbeiten. Er bringt immer gute Ideen in eine Planung ein und übernimmt bei der Ausführung seine Rolle welche er souverän abliefert.
-                           </p>
-                           <cite>Luca Calderone</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                  </ul>
-
-               </div> <!-- div.flexslider ends -->
-
-            </div> <!-- div.flex-container ends -->
-
-         </div> <!-- row ends -->
-
-       </div>  <!-- text-container ends -->
-
-   </section> <!-- Testimonials Section End-->
-
-
-   <!-- Contact Section
-   ================================================== -->
-
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li><a><i></i></a></li>
+    </section>
+
+    <!-- Resume -->
+    <section class="section section--alt" id="resume">
+      <div class="container">
+        <h2 class="section__title reveal"><span>02</span> Lebenslauf</h2>
+
+        <div class="resume">
+          <div>
+            <h3 class="sub">Berufserfahrung</h3>
+            <ol class="timeline">
+              <li class="reveal">
+                <span class="tag tag--now">Aktuell</span>
+                <h4>Administration</h4>
+                <p class="meta">Sanacare</p>
+                <p>Ich bin derzeit wieder bei der Sanacare tätig und unterstütze das Team in einer vielseitigen Funktion. Dabei übernehme ich administrative Aufgaben und trage zur reibungslosen Organisation der Abläufe im Arbeitsalltag bei.</p>
+              </li>
+              <li class="reveal">
+                <h4>Militärdienst</h4>
+                <p class="meta">Verteidigungskräfte Finnlands</p>
+                <p>Ein halbes Jahr im finnischen Militär: Basic Training, danach Übermittlungssoldat. In den letzten zwei Monaten Fotograf und Social-Media-Verantwortlicher – mit wertvoller Erfahrung in Kommunikation und Content Creation.</p>
+                <p>Dabei habe ich meine mentalen und physischen Grenzen kennengelernt und gestärkt.</p>
+              </li>
+              <li class="reveal">
+                <h4>Praktikum Administration</h4>
+                <p class="meta">Sanacare</p>
+                <p>Praktische Erfahrung im administrativen Bereich: Organisation von Dokumenten, Bearbeitung von Korrespondenz und Unterstützung bei allgemeinen Büroarbeiten.</p>
+              </li>
+              <li class="reveal">
+                <h4>IT-Supporter 1st &amp; 2nd Level</h4>
+                <p class="meta">Grosse Unternehmen mit Hauptsitz in der Schweiz</p>
+                <p>Bearbeitung von Incidents und Service Requests über ITSM-Tools (z.&nbsp;B. ServiceNow), Fehleranalyse sowie Unterstützung bei Hard- und Softwareproblemen – in engem Kontakt mit Endanwendern und VIP-Kunden.</p>
+              </li>
+              <li class="reveal">
+                <h4>Lehre Informatiker Applikationsentwicklung</h4>
+                <p class="meta">Liip AG</p>
+                <p>Ich habe gemerkt, dass mir die IT-Branche gefällt, nicht aber die Rolle als Vollzeit-Programmierer. Deshalb habe ich die Lehre bewusst frühzeitig beendet, um mich neu zu orientieren.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3 class="sub">Ausbildung</h3>
+            <article class="card reveal">
+              <h4>Kaufmann EFZ</h4>
+              <p class="meta">Dr. Raebers Höhere Handelsschule</p>
+              <ul class="checks">
+                <li>Bürofachdiplom VSH <span>Aug. 2022</span></li>
+                <li>Schulische Lehrabschlussprüfungen bestanden <span>Aug. 2023</span></li>
+              </ul>
+            </article>
+
+            <h3 class="sub">Schulen</h3>
+            <ul class="schools reveal">
+              <li><span>2014–2017</span>Sekundarschule Hungerbüel, Embrach <em>Niveau A</em></li>
+              <li><span>2011–2014</span>Primarschule Lufingen <em>Mittelstufe</em></li>
+              <li><span>2008–2011</span>Pestalozzi Grundschule <em>Aschaffenburg, DE</em></li>
             </ul>
 
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
+            <h3 class="sub">Sprachen</h3>
+            <ul class="langs reveal">
+              <li><strong>Deutsch</strong><span>Muttersprache</span><i style="--lvl:100%"></i></li>
+              <li><strong>Finnisch</strong><span>Muttersprache</span><i style="--lvl:100%"></i></li>
+              <li><strong>Englisch</strong><span>12 Jahre Schule · Sprachaufenthalt Bournemouth</span><i style="--lvl:80%"></i></li>
+              <li><strong>Französisch</strong><span>6 Jahre Schule</span><i style="--lvl:45%"></i></li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </section>
 
-   </footer> <!-- Footer End-->
+    <!-- Creative / Design -->
+    <section class="section section--dark" id="creative">
+      <div class="container">
+        <h2 class="section__title reveal"><span>03</span> Kreativ &amp; Design</h2>
+        <p class="section__intro reveal">Neben Administration und IT habe ich ein Auge für Bild, Bewegung und Gestaltung – und setze das gerne ein.</p>
+        <div class="creative">
+          <article class="tile reveal">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+            <h3>Fotografie</h3>
+            <p>Als Fotograf im finnischen Militär habe ich den Alltag der Truppe dokumentiert.</p>
+          </article>
+          <article class="tile reveal">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg>
+            <h3>Film Editing</h3>
+            <p>Eigene Videos filmen und schneiden – von GoPro-Clips bis zu Sport-Montagen.</p>
+          </article>
+          <article class="tile reveal">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            <h3>Social Media</h3>
+            <p>Verantwortlich für Social-Media-Inhalte: Kommunikation, die ankommt.</p>
+          </article>
+          <article class="tile reveal">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16"/></svg>
+            <h3>Webdesign</h3>
+            <p>HTML, CSS, JavaScript und WordPress – Websites gestalten und umsetzen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-   <!-- Java Script
-   ================================================== -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <h2 class="section__title reveal"><span>04</span> Skills</h2>
+        <p class="section__intro reveal">Durch meine Ausbildung, meine Berufserfahrung und mein Interesse in der Freizeit habe ich diese Skills erlernt.</p>
+        <div class="skillgroups">
+          <div class="reveal">
+            <h3 class="sub">Office &amp; Administration</h3>
+            <ul class="chips"><li>Microsoft Office</li><li>Korrespondenz</li><li>Dokumentenorganisation</li><li>Büroorganisation</li></ul>
+          </div>
+          <div class="reveal">
+            <h3 class="sub">IT</h3>
+            <ul class="chips"><li>1st &amp; 2nd Level Support</li><li>ServiceNow / ITSM</li><li>Hardware &amp; Software</li><li>Fehleranalyse</li></ul>
+          </div>
+          <div class="reveal">
+            <h3 class="sub">Design &amp; Web</h3>
+            <ul class="chips"><li>Photoshop</li><li>Film Editing</li><li>Content Creation</li><li>HTML5</li><li>CSS</li><li>JavaScript</li><li>WordPress</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
+    <!-- Mottos -->
+    <section class="mottos">
+      <div class="container">
+        <h2 class="visually-hidden">Lebensmottos</h2>
+        <blockquote class="reveal">«Knowledge isn’t power; knowledge is only potential power. Action is power.»</blockquote>
+        <blockquote class="reveal">«To be in the 1%, you have to do what the 99% won’t.»</blockquote>
+      </div>
+    </section>
 
+    <!-- References -->
+    <section class="section section--alt" id="references">
+      <div class="container">
+        <h2 class="section__title reveal"><span>05</span> Referenzen</h2>
+        <div class="refs">
+          <figure class="ref reveal">
+            <blockquote>Kalle Nutivaara ist ein sehr ambitionierter Mitarbeiter. Sein Wunsch, Hindernisse zu überwinden, ist ein echter Ansporn für alle im Team. Mit seiner Kreativität und seinen einzigartigen Ideen füllt er den Raum mit Innovation.</blockquote>
+            <figcaption><span class="avatar">AS</span>Alexander Stöckl</figcaption>
+          </figure>
+          <figure class="ref reveal">
+            <blockquote>Ich habe mit Kalle Nutivaara die Berufsschule besucht. Seine Art, immer fröhlich und motiviert zu sein, macht einfach Spass in der Zusammenarbeit. Er bringt gute Ideen in die Planung ein und übernimmt bei der Ausführung seine Rolle, die er souverän abliefert.</blockquote>
+            <figcaption><span class="avatar">LC</span>Luca Calderone</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner reveal">
+        <h2 class="section__title"><span>06</span> Kontakt</h2>
+        <p class="lead">Ich freue mich auf Ihre Nachricht.</p>
+        <div class="contact__grid">
+          <a class="contact__item" href="mailto:kalle.nutivaara@gmail.com">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <span>kalle.nutivaara@gmail.com</span>
+          </a>
+          <a class="contact__item" href="tel:+41788597840">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+            <span>+41 78 859 78 40</span>
+          </a>
+          <div class="contact__item">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            <span>Moosbrunnenstrasse 114<br>8426 Lufingen</span>
+          </div>
+          <a class="contact__item" href="https://www.instagram.com/kallenutivaara/" target="_blank" rel="noopener">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            <span>@kallenutivaara</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year">2026</span> Kalle Nutivaara</p>
+      <a href="#top">Nach oben ↑</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
-
 </html>
