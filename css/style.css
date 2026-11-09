@@ -283,3 +283,18 @@ a.contact__item:hover { text-decoration: none; border-color: var(--accent); tran
   .js .reveal { opacity: 1; transform: none; transition: none; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Unternehmen */
+.ventures { display: grid; gap: 12px; margin-top: 28px; }
+@media (min-width: 520px) { .ventures { grid-template-columns: 1fr 1fr; } }
+.venture {
+  display: flex; flex-direction: column; gap: 2px; padding: 22px; border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--accent), #083e74); color: #fff; box-shadow: var(--shadow);
+  transition: transform .2s, box-shadow .2s;
+}
+.venture:hover { text-decoration: none; transform: translateY(-3px); }
+.venture__role { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; opacity: .8; }
+.about .venture strong { color: #fff; font-size: 26px; letter-spacing: -.03em; }
+.venture span:not(.venture__role) { opacity: .85; font-size: 15px; }
+.venture em { font-style: normal; font-weight: 700; font-size: 14px; margin-top: 10px; }
+.timeline .meta a { color: inherit; }
