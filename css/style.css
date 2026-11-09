@@ -181,13 +181,13 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
 .resume .sub:not(:first-child) { margin-top: 40px; }
 .timeline { position: relative; padding-left: 28px; }
 .timeline::before { content: ""; position: absolute; left: 6px; top: 8px; bottom: 8px; width: 2px; background: var(--border); }
-.timeline li { position: relative; padding-bottom: 32px; }
-.timeline li:last-child { padding-bottom: 0; }
-.timeline li::before {
+.timeline > li { position: relative; padding-bottom: 32px; }
+.timeline > li:last-child { padding-bottom: 0; }
+.timeline > li::before {
   content: ""; position: absolute; left: -28px; top: 6px; width: 14px; height: 14px; border-radius: 50%;
   background: var(--bg); border: 3px solid var(--accent);
 }
-.section--alt .timeline li::before { background: var(--surface-2); }
+.section--alt .timeline > li::before { background: var(--surface-2); }
 .timeline h4 { font-size: 21px; margin-bottom: 4px; }
 .timeline p:not(.meta) { color: var(--muted); }
 .tag { display: inline-block; font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; padding: 3px 10px; border-radius: 999px; margin-bottom: 8px; }
@@ -283,3 +283,37 @@ a.contact__item:hover { text-decoration: none; border-color: var(--accent); tran
   .js .reveal { opacity: 1; transform: none; transition: none; }
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Unternehmen */
+.ventures { display: grid; gap: 12px; margin-top: 28px; }
+@media (min-width: 520px) { .ventures { grid-template-columns: 1fr 1fr; } }
+.venture {
+  display: flex; flex-direction: column; gap: 2px; padding: 22px; border-radius: var(--radius);
+  background: linear-gradient(135deg, var(--accent), #083e74); color: #fff; box-shadow: var(--shadow);
+  transition: transform .2s, box-shadow .2s;
+}
+.venture:hover { text-decoration: none; transform: translateY(-3px); }
+.venture__role { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; opacity: .8; }
+.about .venture strong { color: #fff; font-size: 26px; letter-spacing: -.03em; }
+.venture span:not(.venture__role) { opacity: .85; font-size: 15px; }
+.venture em { font-style: normal; font-weight: 700; font-size: 14px; margin-top: 10px; }
+.timeline .meta a { color: inherit; }
+
+/* Lebenslauf-Details */
+.date { font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; margin-bottom: 6px; }
+.bullets { margin-top: 8px; }
+.bullets li { position: relative; padding-left: 18px; color: var(--muted); font-size: 15.5px; margin-bottom: 6px; }
+.bullets li::before { content: ""; position: absolute; left: 2px; top: .7em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+.edu li { padding: 14px 0; border-bottom: 1px solid var(--border); }
+.edu li:first-child { padding-top: 0; }
+.edu span { display: block; font-size: 13px; font-weight: 700; color: var(--accent); }
+.edu strong { display: block; font-size: 16px; line-height: 1.35; margin: 2px 0; }
+.edu em { font-style: normal; color: var(--muted); font-size: 14px; }
+.edu--now strong::after { content: "Aktuell"; display: inline-block; margin-left: 8px; vertical-align: 2px; font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; padding: 2px 8px; border-radius: 999px; background: rgba(47, 191, 113, .15); color: #1f9d5a; }
+.resume .chips li { font-size: 14px; }
+
+/* Mobile: kein horizontales Überlaufen */
+html, body { overflow-x: clip; }
+.hero__photo { width: min(calc(100% - 20px), 380px); }
+.facts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.facts li, .edu strong, .timeline h4 { min-width: 0; overflow-wrap: break-word; hyphens: auto; }
