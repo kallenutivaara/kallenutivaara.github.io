@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kalle Nutivaara – Lebenslauf</title>
-  <meta name="description" content="Kalle Nutivaara – Kaufmann EFZ mit Background in IT, Gesundheitswesen und Administration. Sachbearbeiter Corporate Health bei Sanacare, Student Wirtschaftspsychologie (HWZ), Gründer von lifyx Coaching, Co-Founder von neuriq.">
+  <title>Kalle Nutivaara</title>
+  <meta name="description" content="Kalle Nutivaara – Sachbearbeiter Corporate Health bei Sanacare, Student Wirtschaftspsychologie (HWZ), Gründer von lifyx und Co-Founder von neuriq.">
   <meta name="author" content="Kalle Nutivaara">
   <meta name="robots" content="noindex, nofollow">
   <meta property="og:title" content="Kalle Nutivaara">
-  <meta property="og:description" content="Wirtschaftspsychologie-Student, Coach bei lifyx, Co-Founder von neuriq – mein Online-Lebenslauf.">
+  <meta property="og:description" content="Corporate Health, Wirtschaftspsychologie und zwei eigene Projekte: lifyx und neuriq.">
   <meta property="og:image" content="images/kalle-og.jpg">
-  <meta name="theme-color" content="#0e3b5c">
+  <meta name="theme-color" content="#0f0e27">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -24,13 +24,16 @@
 
   <header class="nav" id="top">
     <div class="nav__inner">
-      <a class="brand" href="#top" aria-label="Kalle Nutivaara – zum Seitenanfang"><svg class="brand__logo" viewBox="0 0 1299 1500" aria-hidden="true"><path class="brand__hex" fill-rule="evenodd" d="M649 0 1299 375V1127L649 1500 0 1127V375ZM649 90 83 419V1081L649 1410 1215 1081V419Z"/><path class="brand__kn" d="M349 479H425V735L550 479H620L512 717L637 1021H564L459 766L425 829V1021H349ZM681 479H733L887 839V479H949V1021H902L745 651V1021H681Z"/></svg><span class="brand__name">Kalle Nutivaara</span></a>
+      <a class="brand" href="#top" aria-label="Kalle Nutivaara – zum Seitenanfang">
+        <svg class="brand__logo" viewBox="0 0 1299 1500" aria-hidden="true"><path class="brand__hex" fill-rule="evenodd" d="M649 0 1299 375V1127L649 1500 0 1127V375ZM649 90 83 419V1081L649 1410 1215 1081V419Z"/><path class="brand__kn" d="M349 479H425V735L550 479H620L512 717L637 1021H564L459 766L425 829V1021H349ZM681 479H733L887 839V479H949V1021H902L745 651V1021H681Z"/></svg>
+        <span class="brand__name">Kalle Nutivaara</span>
+      </a>
       <button class="nav__toggle" aria-expanded="false" aria-controls="menu" aria-label="Menü öffnen">
         <span></span><span></span>
       </button>
       <nav id="menu" class="nav__menu" aria-label="Hauptnavigation">
         <a href="#about">Über mich</a>
-        <a href="#resume">Lebenslauf</a>
+        <a href="#resume">Werdegang</a>
         <a href="#creative">Kreativ</a>
         <a href="#skills">Kompetenzen</a>
         <a href="#references">Referenzen</a>
@@ -41,107 +44,110 @@
 
   <main id="main">
     <!-- Hero -->
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__text reveal">
-          <p class="eyebrow">Corporate Health · Wirtschaftspsychologie · Co-Founder</p>
-          <h1>Ich bin <span class="accent">Kalle Nutivaara.</span></h1>
-          <p class="lead">Kaufmann EFZ mit Background in IT, Gesundheitswesen und Administration. Ich arbeite strukturiert, denke analytisch und packe gerne dort an, wo konkrete Lösungen gefragt sind.</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#about">Mehr über mich</a>
-          </div>
-          <div class="lived">
-            <p class="lived__label">Gelebt in</p>
-            <ol class="flags" aria-label="Gelebt in">
-              <li><b>Finnland</b><small>geboren</small></li>
-              <li><b>Deutschland</b><small>aufgewachsen</small></li>
-              <li><b>Schweiz</b><small>zu Hause</small></li>
-            </ol>
-          </div>
+    <section class="hero" aria-labelledby="hero-title">
+      <picture class="hero__photo">
+        <source media="(max-width: 700px)" srcset="images/kalle-hero-sm.webp">
+        <img src="images/kalle-hero.webp" width="1200" height="1125" alt="Kalle Nutivaara im hellblauen Sakko">
+      </picture>
+      <div class="hero__inner">
+        <h1 id="hero-title" class="hero__name"><span>Kalle</span><span>Nutivaara</span></h1>
+        <p class="hero__lead">Ich verbinde Menschen, Organisation und Digitalisierung – heute im Corporate Health bei der Sanacare, im Studium der Wirtschaftspsychologie und mit meinen Projekten lifyx und neuriq.</p>
+        <dl class="lived" aria-label="Gelebt in">
+          <div><dt>Finnland</dt><dd>geboren</dd></div>
+          <div><dt>Deutschland</dt><dd>aufgewachsen</dd></div>
+          <div><dt>Schweiz</dt><dd>zu Hause in Zürich</dd></div>
+        </dl>
+        <div class="hero__actions">
+          <a class="btn" href="#resume">Werdegang ansehen</a>
+          <a class="link" href="#contact">Kontakt aufnehmen</a>
         </div>
-        <figure class="hero__photo reveal">
-          <img src="images/kalle.webp" width="640" height="800" alt="Porträt von Kalle Nutivaara">
-          <figcaption>Zürich, Schweiz</figcaption>
-        </figure>
       </div>
     </section>
 
     <!-- About -->
-    <section class="section" id="about">
-      <div class="container about">
-        <div class="reveal">
-          <h2 class="section__title"><span>01</span> Über mich</h2>
-          <p class="about__quote">In Finnland geboren, in Deutschland aufgewachsen, in der Schweiz zu Hause.</p>
-          <p>Kaufmann EFZ mit Background in <strong>IT</strong>, <strong>Gesundheitswesen</strong> und <strong>Administration</strong>. Besonders spannend finde ich die Verbindung von <strong>Menschen, Verhalten, Organisation und Digitalisierung</strong> – deshalb studiere ich seit 2026 Wirtschaftspsychologie an der HWZ und arbeite parallel als Sachbearbeiter im Corporate Health bei der Sanacare.</p>
-          <p>Analytisch, strukturiert, zuverlässig, kommunikativ und hilfsbereit.</p>
-          <div class="ventures">
-            <a class="venture" href="https://lifyx.ch" target="_blank" rel="noopener">
-              <span class="venture__role">Gründer</span>
-              <strong>lifyx</strong>
-              <span>Mein eigenes Coaching</span>
-              <em>lifyx.ch ↗</em>
-            </a>
-            <a class="venture" href="https://neuriq.ch" target="_blank" rel="noopener">
-              <span class="venture__role">Co-Founder</span>
-              <strong>neuriq</strong>
-              <span>Mein Unternehmen als Mitgründer</span>
-              <em>neuriq.ch ↗</em>
-            </a>
-          </div>
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <div>
+          <h2 id="about-title" class="h2">Über mich</h2>
+          <p class="about__statement">Mich interessiert, wie Menschen, Verhalten, Organisation und Digitalisierung zusammenspielen.</p>
+          <p>Kaufmann EFZ mit Background in IT, Gesundheitswesen und Administration. Ich arbeite strukturiert, denke analytisch und packe gerne dort an, wo konkrete Lösungen gefragt sind. Seit 2026 studiere ich Wirtschaftspsychologie an der HWZ und arbeite parallel als Sachbearbeiter im Corporate Health bei der Sanacare.</p>
+          <p class="about__traits">Analytisch, strukturiert, zuverlässig, kommunikativ und hilfsbereit.</p>
         </div>
-        <ul class="facts reveal">
-          <li><strong><span data-age>25</span> Jahre</strong><span>Geboren in Oulu, Finnland</span></li>
-          <li><strong>C-Ausweis</strong><span>Finnische Staatsangehörigkeit</span></li>
-          <li><strong>Kaufmann EFZ</strong><span>+ Berufsmaturität Wirtschaft (BMS)</span></li>
-          <li><strong>BSc-Student</strong><span>Wirtschaftspsychologie, HWZ</span></li>
-          <li><strong>Corporate Health</strong><span>Sachbearbeiter, Sanacare AG</span></li>
-          <li><strong>4 Sprachen</strong><span>DE · FI · EN (C1) · FR</span></li>
-        </ul>
+        <dl class="facts">
+          <div><dt>Alter</dt><dd><span data-age>25</span> Jahre</dd></div>
+          <div><dt>Wohnort</dt><dd>Zürich</dd></div>
+          <div><dt>Aufenthalt</dt><dd>C-Ausweis</dd></div>
+          <div><dt>Abschlüsse</dt><dd>Kaufmann EFZ, Berufsmaturität</dd></div>
+          <div><dt>Studium</dt><dd>BSc Wirtschaftspsychologie</dd></div>
+          <div><dt>Sprachen</dt><dd>Deutsch, Finnisch, Englisch, Französisch</dd></div>
+        </dl>
+      </div>
+
+      <div class="container ventures">
+        <a class="venture" href="https://lifyx.ch" target="_blank" rel="noopener">
+          <span class="venture__name">lifyx</span>
+          <span class="venture__text"><b>Gründer</b> Mein eigenes Coaching</span>
+          <span class="venture__url">lifyx.ch</span>
+        </a>
+        <a class="venture" href="https://neuriq.ch" target="_blank" rel="noopener">
+          <span class="venture__name">neuriq</span>
+          <span class="venture__text"><b>Co-Founder</b> Mein Unternehmen als Mitgründer</span>
+          <span class="venture__url">neuriq.ch</span>
+        </a>
       </div>
     </section>
 
     <!-- Resume -->
-    <section class="section section--alt" id="resume">
+    <section class="section resume" id="resume" aria-labelledby="resume-title">
       <div class="container">
-        <h2 class="section__title reveal"><span>02</span> Lebenslauf</h2>
+        <div class="resume__head">
+          <h2 id="resume-title" class="h2">Werdegang</h2>
+          <ul class="legend" aria-label="Legende">
+            <li class="k-work">Beruf</li>
+            <li class="k-edu">Ausbildung</li>
+            <li class="k-mil">Militär</li>
+            <li class="k-own">Eigene Projekte</li>
+          </ul>
+        </div>
 
-        <div class="resume">
-          <div>
-            <h3 class="sub">Mein Weg – neueste Station zuerst</h3>
-            <ul class="legend reveal" aria-label="Legende">
-              <li class="k-work">Beruf</li>
-              <li class="k-edu">Ausbildung</li>
-              <li class="k-mil">Militär</li>
-              <li class="k-own">Eigene Projekte</li>
-            </ul>
-            <ol class="timeline">
-              <li class="reveal t-work">
-                <p class="date"><span class="tag tag--now">Aktuell</span> Seit Sept. 2026</p>
-                <h4>Sachbearbeiter Corporate Health</h4>
+        <div class="resume__grid">
+          <ol class="timeline" style="--progress: 0">
+            <li class="t-work">
+              <p class="date"><span class="now">Aktuell</span> seit Sept. 2026</p>
+              <div class="entry">
+                <h3>Sachbearbeiter Corporate Health</h3>
                 <p class="meta">Sanacare AG</p>
                 <p>Seit dem 1. September 2026 bin ich zurück bei der Sanacare – diesmal als Sachbearbeiter im Bereich Corporate Health.</p>
-              </li>
-              <li class="reveal t-edu">
-                <p class="date"><span class="tag tag--now">Aktuell</span> Seit Sept. 2026 · bis 2030</p>
-                <h4>Bachelor Wirtschaftspsychologie</h4>
+              </div>
+            </li>
+            <li class="t-edu">
+              <p class="date"><span class="now">Aktuell</span> seit Sept. 2026, bis 2030</p>
+              <div class="entry">
+                <h3>Bachelor Wirtschaftspsychologie</h3>
                 <p class="meta">HWZ Hochschule für Wirtschaft Zürich</p>
                 <p>Studium an der Schnittstelle von Menschen, Verhalten und Organisation.</p>
-              </li>
-              <li class="reveal t-own">
-                <p class="date"><span class="tag tag--now">Aktuell</span> Parallel</p>
-                <h4>Gründer &amp; Coach · Co-Founder</h4>
-                <p class="meta"><a href="https://lifyx.ch" target="_blank" rel="noopener">lifyx</a> · <a href="https://neuriq.ch" target="_blank" rel="noopener">neuriq</a></p>
+              </div>
+            </li>
+            <li class="t-own">
+              <p class="date"><span class="now">Aktuell</span> parallel</p>
+              <div class="entry">
+                <h3>Gründer und Co-Founder</h3>
+                <p class="meta"><a href="https://lifyx.ch" target="_blank" rel="noopener">lifyx</a> und <a href="https://neuriq.ch" target="_blank" rel="noopener">neuriq</a></p>
                 <p>Mit lifyx habe ich mein eigenes Coaching aufgebaut; bei neuriq bin ich Mitgründer.</p>
-              </li>
-              <li class="reveal t-edu">
-                <p class="date">Aug. 2025 – Juni 2026</p>
-                <h4>Berufsmaturität Wirtschaft <span class="ok">✓ bestanden</span></h4>
+              </div>
+            </li>
+            <li class="t-edu">
+              <p class="date">Aug. 2025 – Juni 2026</p>
+              <div class="entry">
+                <h3>Berufsmaturität Wirtschaft <span class="ok">bestanden</span></h3>
                 <p class="meta">Wirtschaftsschule KV Winterthur</p>
                 <p>Berufsmaturität Wirtschaft und Dienstleistungen, Typ Wirtschaft – der Schritt Richtung Hochschule.</p>
-              </li>
-              <li class="reveal t-work">
-                <p class="date">Jan. 2025 – Aug. 2025 · nach dem Militär</p>
-                <h4>Projektmitarbeiter</h4>
+              </div>
+            </li>
+            <li class="t-work">
+              <p class="date">Jan. 2025 – Aug. 2025<small>nach dem Militär</small></p>
+              <div class="entry">
+                <h3>Projektmitarbeiter</h3>
                 <p class="meta">Sanacare AG, Winterthur</p>
                 <ul class="bullets">
                   <li>Projektleitung zur Nutzung neuer Räumlichkeiten</li>
@@ -151,187 +157,179 @@
                   <li>Mitgestaltung einer internen Mittagssprechstunde zum Thema Künstliche Intelligenz</li>
                   <li>Unterstützung bei internen Prozessen und koordinativen Aufgaben</li>
                 </ul>
-              </li>
-              <li class="reveal t-mil">
-                <p class="date">Juli 2024 – Dez. 2024</p>
-                <h4>Übermittlungssoldat &amp; Fotograf</h4>
-                <p class="meta">Finnischer Militärdienst · abgeschlossen</p>
+              </div>
+            </li>
+            <li class="t-mil">
+              <p class="date">Juli 2024 – Dez. 2024</p>
+              <div class="entry">
+                <h3>Übermittlungssoldat und Fotograf</h3>
+                <p class="meta">Finnischer Militärdienst, abgeschlossen</p>
                 <ul class="bullets">
                   <li>Basic Training, danach Einsatz als Übermittlungssoldat</li>
                   <li>Erstellung und Bearbeitung von Foto- und Videomaterial für die Social-Media-Kanäle des finnischen Militärs</li>
                   <li>Resilienz aufgebaut: mentale und physische Grenzen kennengelernt und gezielt gestärkt</li>
                 </ul>
-              </li>
-              <li class="reveal t-work">
-                <p class="date">Aug. 2023 – Juli 2024 · vor dem Militär</p>
-                <h4>Kaufmännischer Praktikant</h4>
-                <p class="meta">Sanacare AG, Winterthur · Praktikum zum Kaufmann EFZ</p>
+              </div>
+            </li>
+            <li class="t-work">
+              <p class="date">Aug. 2023 – Juli 2024<small>vor dem Militär</small></p>
+              <div class="entry">
+                <h3>Kaufmännischer Praktikant</h3>
+                <p class="meta">Sanacare AG, Winterthur – Praktikum zum Kaufmann EFZ</p>
                 <ul class="bullets">
                   <li>Administrative Unterstützung im Tagesgeschäft</li>
                   <li>Telefonischer und schriftlicher Kontakt mit Patientinnen und Patienten sowie internen und externen Stellen</li>
                   <li>Bearbeitung von Ein- und Austritten sowie organisatorischen Abläufen</li>
                   <li>Postbearbeitung, Bestellungen, Datenpflege und allgemeine Büroarbeiten</li>
                 </ul>
-              </li>
-              <li class="reveal t-edu">
-                <p class="date">2021 – 2024</p>
-                <h4>Kaufmann EFZ <span class="ok">✓ abgeschlossen</span></h4>
+              </div>
+            </li>
+            <li class="t-edu">
+              <p class="date">2021 – 2024</p>
+              <div class="entry">
+                <h3>Kaufmann EFZ <span class="ok">abgeschlossen</span></h3>
                 <p class="meta">Dr. Räbers Höhere Handelsschule Zürich</p>
                 <p>Kaufmännische Grundbildung, Dienstleistung und Administration – inklusive Bürofachdiplom VSH und anschliessendem Praktikum bei der Sanacare.</p>
-              </li>
-              <li class="reveal t-work">
-                <p class="date">Okt. 2019 – März 2020 · danach temporär bis 2023</p>
-                <h4>IT-Supporter</h4>
+              </div>
+            </li>
+            <li class="t-work">
+              <p class="date">Okt. 2019 – März 2020<small>danach temporär bis 2023</small></p>
+              <div class="entry">
+                <h3>IT-Supporter</h3>
                 <p class="meta">Oniko AG, Wettingen</p>
                 <ul class="bullets">
                   <li>IT-Support für Endanwender bei technischen Fragen und Störungen</li>
                   <li>Rollouts, Arbeitsplatzumzüge, Migrationen und Office-365-Support</li>
                   <li>Direkte Beratung von Mitarbeitenden vor Ort und remote</li>
                 </ul>
-              </li>
-              <li class="reveal t-edu">
-                <p class="date">Aug. 2017 – Juli 2019 · frühzeitig beendet</p>
-                <h4>Lehre Informatiker EFZ Applikationsentwicklung</h4>
-                <p class="meta">Liip AG, Zürich · Berufsbildungsschule Winterthur</p>
+              </div>
+            </li>
+            <li class="t-edu">
+              <p class="date">Aug. 2017 – Juli 2019<small>frühzeitig beendet</small></p>
+              <div class="entry">
+                <h3>Lehre Informatiker EFZ Applikationsentwicklung</h3>
+                <p class="meta">Liip AG, Zürich, und Berufsbildungsschule Winterthur</p>
                 <ul class="bullets">
                   <li>Umsetzung von Webprojekten mit HTML, CSS und PHP</li>
                   <li>Mitarbeit bei Kundenprojekten, unter anderem im Bereich Intranet</li>
                   <li>Entwicklung eines Memory-Spiels für einen Event einer grossen Schweizer Detailhandelskette</li>
                   <li>Gemerkt: IT gefällt mir – Vollzeit-Programmieren nicht. Deshalb bewusste Neuorientierung Richtung Wirtschaft.</li>
                 </ul>
-              </li>
-            </ol>
-          </div>
+              </div>
+            </li>
+          </ol>
 
-          <div class="resume__side">
-
-            <h3 class="sub">Sprachen</h3>
-            <ul class="langs reveal">
-              <li><strong>Finnisch</strong><span>Muttersprache</span><i style="--lvl:100%"></i></li>
-              <li><strong>Deutsch</strong><span>Fliessend</span><i style="--lvl:100%"></i></li>
-              <li><strong>Englisch</strong><span>C1 · Cambridge First</span><i style="--lvl:85%"></i></li>
-              <li><strong>Französisch</strong><span>Grundkenntnisse</span><i style="--lvl:35%"></i></li>
+          <aside class="resume__side">
+            <h3 class="h3">Sprachen</h3>
+            <ul class="langs">
+              <li><span>Finnisch</span><span>Muttersprache</span></li>
+              <li><span>Deutsch</span><span>Fliessend</span></li>
+              <li><span>Englisch</span><span>C1, Cambridge First</span></li>
+              <li><span>Französisch</span><span>Grundkenntnisse</span></li>
             </ul>
-
-            <h3 class="sub">Interessen</h3>
-            <ul class="chips reveal">
-              <li>Krafttraining</li><li>Joggen</li><li>Kampfsport</li><li>Persönlichkeitsentwicklung</li><li>KI &amp; Digitalisierung</li>
-            </ul>
-          </div>
+            <h3 class="h3">Interessen</h3>
+            <p class="interests">Krafttraining, Joggen, Kampfsport, Persönlichkeitsentwicklung, KI und Digitalisierung.</p>
+          </aside>
         </div>
       </div>
     </section>
 
-    <!-- Creative / Digital -->
-    <section class="section section--dark" id="creative">
+    <!-- Creative -->
+    <section class="section creative" id="creative" aria-labelledby="creative-title">
       <div class="container">
-        <h2 class="section__title reveal"><span>03</span> Kreativ &amp; Digital</h2>
-        <p class="section__intro reveal">Neben Organisation und Administration habe ich ein Auge für Bild, Gestaltung und digitale Lösungen.</p>
-        <div class="creative">
-          <article class="tile reveal">
+        <h2 id="creative-title" class="h2">Kreativ und digital</h2>
+        <p class="intro">Neben Organisation und Administration habe ich ein Auge für Bild, Gestaltung und digitale Lösungen.</p>
+        <ul class="creative__list">
+          <li>
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
-            <h3>Foto &amp; Video</h3>
+            <h3>Foto und Video</h3>
             <p>Als Fotograf im finnischen Militärdienst Foto- und Videomaterial erstellt und bearbeitet.</p>
-          </article>
-          <article class="tile reveal">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </li>
+          <li>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8"/></svg>
             <h3>Social Media</h3>
-            <p>Content für die Social-Media-Kanäle des finnischen Militärs – von der Aufnahme bis zum fertigen Beitrag.</p>
-          </article>
-          <article class="tile reveal">
+            <p>Content für die Kanäle des finnischen Militärs – von der Aufnahme bis zum fertigen Beitrag.</p>
+          </li>
+          <li>
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16"/></svg>
             <h3>Web</h3>
             <p>Webprojekte mit HTML, CSS und PHP bei Liip – inklusive eines Memory-Spiels für einen Event.</p>
-          </article>
-          <article class="tile reveal">
+          </li>
+          <li>
             <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2z"/></svg>
             <h3>KI-Tools</h3>
-            <p>Digitale Arbeitsprozesse mit KI – unter anderem eine interne KI-Sprechstunde bei Sanacare mitgestaltet.</p>
-          </article>
-        </div>
+            <p>Digitale Arbeitsprozesse mit KI – unter anderem eine interne KI-Sprechstunde bei der Sanacare mitgestaltet.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
     <!-- Skills -->
-    <section class="section" id="skills">
+    <section class="section skills" id="skills" aria-labelledby="skills-title">
       <div class="container">
-        <h2 class="section__title reveal"><span>04</span> Kompetenzen</h2>
-        <div class="skillgroups">
-          <div class="reveal">
-            <h3 class="sub">Business &amp; Organisation</h3>
-            <ul class="chips"><li>Projektkoordination</li><li>Recherche</li><li>Entscheidungsgrundlagen</li><li>Datenbereinigung</li><li>Dokumentation</li><li>Coaching</li><li>Unternehmertum</li></ul>
+        <h2 id="skills-title" class="h2">Kompetenzen</h2>
+        <div class="skills__grid">
+          <div>
+            <h3 class="h3">Business und Organisation</h3>
+            <ul class="list"><li>Projektkoordination</li><li>Recherche und Entscheidungsgrundlagen</li><li>Datenbereinigung und Dokumentation</li><li>Coaching</li><li>Unternehmertum</li></ul>
           </div>
-          <div class="reveal">
-            <h3 class="sub">IT &amp; Office</h3>
-            <ul class="chips"><li>Microsoft 365</li><li>Teams</li><li>Word</li><li>Excel</li><li>PowerPoint</li><li>IT-Support</li><li>Rollout</li><li>Onsite-Support</li></ul>
+          <div>
+            <h3 class="h3">IT und Office</h3>
+            <ul class="list"><li>Microsoft 365, Teams</li><li>Word, Excel, PowerPoint</li><li>IT-Support, Rollout, Onsite-Support</li></ul>
           </div>
-          <div class="reveal">
-            <h3 class="sub">Digital &amp; Web</h3>
-            <ul class="chips"><li>KI-Tools</li><li>Digitale Arbeitsprozesse</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL (Grundlagen)</li><li>Foto &amp; Video</li></ul>
+          <div>
+            <h3 class="h3">Digital und Web</h3>
+            <ul class="list"><li>KI-Tools und digitale Arbeitsprozesse</li><li>HTML, CSS, JavaScript</li><li>MySQL (Grundlagen)</li><li>Foto und Video</li></ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Mottos -->
-    <section class="mottos">
+    <!-- Motto -->
+    <section class="motto" aria-label="Lebensmotto">
       <div class="container">
-        <h2 class="visually-hidden">Lebensmotto</h2>
-        <blockquote class="reveal">«Knowledge isn’t power; knowledge is only potential power. Action is power.»</blockquote>
+        <blockquote>
+          <p>«Knowledge isn’t power; knowledge is only potential power. Action is power.»</p>
+        </blockquote>
       </div>
     </section>
 
     <!-- References -->
-    <section class="section section--alt" id="references">
+    <section class="section refs" id="references" aria-labelledby="refs-title">
       <div class="container">
-        <h2 class="section__title reveal"><span>05</span> Referenzen</h2>
-        <p class="section__intro reveal">Weitere Referenzen gebe ich gerne auf Anfrage.</p>
-        <div class="refs">
-          <figure class="ref reveal">
+        <h2 id="refs-title" class="h2">Referenzen</h2>
+        <div class="refs__grid">
+          <figure>
             <blockquote>Kalle Nutivaara ist ein sehr ambitionierter Mitarbeiter. Sein Wunsch, Hindernisse zu überwinden, ist ein echter Ansporn für alle im Team. Mit seiner Kreativität und seinen einzigartigen Ideen füllt er den Raum mit Innovation.</blockquote>
-            <figcaption><span class="avatar">AS</span>Alexander Stöckl</figcaption>
+            <figcaption>Alexander Stöckl</figcaption>
           </figure>
-          <figure class="ref reveal">
+          <figure>
             <blockquote>Ich habe mit Kalle Nutivaara die Berufsschule besucht. Seine Art, immer fröhlich und motiviert zu sein, macht einfach Spass in der Zusammenarbeit. Er bringt gute Ideen in die Planung ein und übernimmt bei der Ausführung seine Rolle, die er souverän abliefert.</blockquote>
-            <figcaption><span class="avatar">LC</span>Luca Calderone</figcaption>
+            <figcaption>Luca Calderone</figcaption>
           </figure>
         </div>
+        <p class="refs__note">Weitere Referenzen gebe ich gerne auf Anfrage.</p>
       </div>
     </section>
 
     <!-- Contact -->
-    <section class="section contact" id="contact">
-      <div class="container contact__inner reveal">
-        <h2 class="section__title"><span>06</span> Kontakt</h2>
-        <p class="lead">Ich freue mich auf Ihre Nachricht.</p>
-        <div class="contact__grid">
-          <a class="contact__item" href="mailto:kalle.nutivaara@gmail.com">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-            <span>kalle.nutivaara@gmail.com</span>
-          </a>
-          <a class="contact__item" href="tel:+41788597840">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
-            <span>078 859 78 40</span>
-          </a>
-          <div class="contact__item">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
-            <span>Zürich, Schweiz</span>
-          </div>
-          <a class="contact__item" href="https://www.instagram.com/kallenutivaara/" target="_blank" rel="noopener">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-            <span>@kallenutivaara</span>
-          </a>
-        </div>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="h2">Kontakt</h2>
+        <p class="contact__lead">Ich freue mich auf Ihre Nachricht.</p>
+        <a class="contact__mail" href="mailto:kalle.nutivaara@gmail.com">kalle.nutivaara@gmail.com</a>
+        <ul class="contact__list">
+          <li><a href="tel:+41788597840">078 859 78 40</a></li>
+          <li>Zürich, Schweiz</li>
+          <li><a href="https://www.instagram.com/kallenutivaara/" target="_blank" rel="noopener">Instagram @kallenutivaara</a></li>
+        </ul>
       </div>
+      <footer class="footer container">
+        <p>© <span id="year">2026</span> Kalle Nutivaara</p>
+        <a href="#top">Nach oben</a>
+      </footer>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p>© <span id="year">2026</span> Kalle Nutivaara</p>
-      <a href="#top">Nach oben ↑</a>
-    </div>
-  </footer>
 
   <script src="js/main.js"></script>
 </body>
