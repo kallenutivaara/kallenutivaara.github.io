@@ -58,6 +58,16 @@
     links.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s) spy.observe(s); });
   }
 
+  // «Nach oben» und Logo: immer ganz nach oben scrollen
+  document.querySelectorAll('a[href="#top"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      e.preventDefault();
+      setMenu(false);
+      window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      if (history.replaceState) history.replaceState(null, '', location.pathname + location.search);
+    });
+  });
+
   var now = new Date();
   document.getElementById('year').textContent = now.getFullYear();
 
