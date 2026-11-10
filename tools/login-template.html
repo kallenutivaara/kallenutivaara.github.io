@@ -7,28 +7,32 @@
 <title>Kalle Nutivaara</title>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#f4f5f7; --card:#fff; --text:#1d2330; --muted:#5f6878; --accent:#0b5cad; --err:#c0392b; --border:#d9dde3; }
-  @media (prefers-color-scheme: dark) { :root { --bg:#12151b; --card:#1c2029; --text:#e8eaee; --muted:#9aa3b2; --border:#333a46; --err:#ff6b5b; } }
+  :root { --ink:#0f0e27; --text:#eceef6; --muted:#a2a7bf; --ice:#9db8f2; --line:rgba(236,238,246,.18); --err:#ff8f8f; }
   * { box-sizing:border-box; }
-  body { margin:0; min-height:100vh; display:grid; place-items:center; padding:16px; background:var(--bg); color:var(--text); font:16px/1.5 Manrope,system-ui,-apple-system,"Segoe UI",sans-serif; }
-  form { width:100%; max-width:360px; background:var(--card); border:1px solid var(--border); border-radius:12px; padding:28px; }
-  .logo { display:block; width:44px; height:auto; margin-bottom:16px; }
-  h1 { margin:0 0 4px; font-size:22px; }
-  p { margin:0 0 20px; color:var(--muted); font-size:14px; }
-  input, button { width:100%; font:inherit; padding:12px 14px; border-radius:8px; }
-  input { border:1px solid var(--border); background:var(--bg); color:var(--text); margin-bottom:12px; }
-  input:focus { outline:2px solid var(--accent); outline-offset:1px; }
-  button { border:0; background:var(--accent); color:#fff; font-weight:600; cursor:pointer; }
+  body { margin:0; min-height:100vh; display:grid; place-items:center; padding:16px; background:radial-gradient(120% 90% at 85% 10%, #2a2d4a 0, var(--ink) 60%); color:var(--text); font:16px/1.5 "Schibsted Grotesk",system-ui,sans-serif; }
+  form { width:100%; max-width:360px; }
+  .logo { display:block; width:40px; height:auto; margin-bottom:28px; }
+  h1 { margin:0 0 6px; font-size:40px; font-weight:800; letter-spacing:-.04em; line-height:1; }
+  p { margin:0 0 28px; color:var(--muted); }
+  input, button { width:100%; font:inherit; padding:14px 16px; border-radius:999px; }
+  input { border:1px solid var(--line); background:rgba(255,255,255,.04); color:var(--text); margin-bottom:12px; }
+  input::placeholder { color:var(--muted); }
+  input:focus { outline:2px solid var(--ice); outline-offset:2px; }
+  button { border:0; background:var(--text); color:var(--ink); font-weight:700; cursor:pointer; }
+  button:hover { background:#fff; }
   button:disabled { opacity:.6; cursor:wait; }
-  #err { color:var(--err); font-size:14px; min-height:1.5em; margin:10px 0 0; }
+  #err { color:var(--err); font-size:14px; min-height:1.5em; margin:12px 0 0; }
 </style>
 </head>
 <body>
 <form id="f">
-  <svg class="logo" viewBox="0 0 1299 1500" aria-hidden="true"><path fill="var(--accent)" fill-rule="evenodd" d="M649 0 1299 375V1127L649 1500 0 1127V375ZM649 90 83 419V1081L649 1410 1215 1081V419Z"/><path fill="currentColor" d="M349 479H425V735L550 479H620L512 717L637 1021H564L459 766L425 829V1021H349ZM681 479H733L887 839V479H949V1021H902L745 651V1021H681Z"/></svg>
+  <svg class="logo" viewBox="0 0 1299 1500" aria-hidden="true"><path fill="var(--ice)" fill-rule="evenodd" d="M649 0 1299 375V1127L649 1500 0 1127V375ZM649 90 83 419V1081L649 1410 1215 1081V419Z"/><path fill="currentColor" d="M349 479H425V735L550 479H620L512 717L637 1021H564L459 766L425 829V1021H349ZM681 479H733L887 839V479H949V1021H902L745 651V1021H681Z"/></svg>
   <h1>Kalle Nutivaara</h1>
-  <p>Diese Seite ist passwortgeschützt.</p>
+  <p>Bitte geben Sie das Passwort ein, um die Seite zu öffnen.</p>
   <label for="pw" style="position:absolute;left:-9999px">Passwort</label>
   <input id="pw" type="password" placeholder="Passwort" autocomplete="current-password" autofocus required>
   <button id="b" type="submit">Öffnen</button>

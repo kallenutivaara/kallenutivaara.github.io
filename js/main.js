@@ -1,14 +1,38 @@
 (function () {
   'use strict';
-  document.documentElement.classList.add('js');
+  var root = document.documentElement;
+  root.classList.add('js');
+
+  // Lade-Moment: Foto und Name erscheinen einmal, orchestriert
+  function loaded() { requestAnimationFrame(function () { root.classList.add('is-loaded'); }); }
+  var heroImg = document.querySelector('.hero__photo img');
+  if (heroImg && !heroImg.complete) {
+    heroImg.addEventListener('load', loaded, { once: true });
+    heroImg.addEventListener('error', loaded, { once: true });
+    setTimeout(loaded, 1200);
+  } else { loaded(); }
 
   var nav = document.querySelector('.nav');
   var toggle = document.querySelector('.nav__toggle');
   var menu = document.getElementById('menu');
+  var hero = document.querySelector('.hero');
+  var timeline = document.querySelector('.timeline');
 
-  // Navigation: Hintergrund beim Scrollen
-  function onScroll() { nav.classList.toggle('is-scrolled', window.scrollY > 10); }
+  function onScroll() {
+    // Navigation: hell über dem dunklen Hero, danach als Leiste
+    var threshold = hero ? hero.offsetHeight - nav.offsetHeight - 10 : 10;
+    nav.classList.toggle('is-scrolled', window.scrollY > threshold);
+
+    // Zeitleiste füllt sich beim Lesen
+    if (timeline) {
+      var r = timeline.getBoundingClientRect();
+      var start = window.innerHeight * 0.65;
+      var p = (start - r.top) / r.height;
+      timeline.style.setProperty('--progress', Math.max(0, Math.min(1, p)).toFixed(3));
+    }
+  }
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
   onScroll();
 
   // Mobile-Menü
@@ -22,19 +46,6 @@
   menu.addEventListener('click', function (e) { if (e.target.tagName === 'A') setMenu(false); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false); });
 
-  // Einblenden beim Scrollen
-  var items = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); io.unobserve(entry.target); }
-      });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-    items.forEach(function (el) { io.observe(el); });
-  } else {
-    items.forEach(function (el) { el.classList.add('is-visible'); });
-  }
-
   // Aktiven Menüpunkt markieren
   var links = Array.prototype.slice.call(menu.querySelectorAll('a[href^="#"]'));
   if ('IntersectionObserver' in window) {
@@ -46,7 +57,6 @@
     }, { rootMargin: '-45% 0px -50% 0px' });
     links.forEach(function (a) { var s = document.querySelector(a.getAttribute('href')); if (s) spy.observe(s); });
   }
-
 
   var now = new Date();
   document.getElementById('year').textContent = now.getFullYear();
