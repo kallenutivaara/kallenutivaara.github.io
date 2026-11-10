@@ -320,3 +320,30 @@ html, body { overflow-x: clip; }
 .facts strong span { font-size: inherit; color: inherit; }
 .facts li > span { display: block; line-height: 1.45; margin-top: 4px; }
 .facts li { hyphens: manual; }
+
+/* Gelebt in */
+.lived__label { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: .14em; color: var(--muted); margin: 0 0 10px; }
+.flags { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.flags li { gap: 8px; padding: 8px 14px; position: relative; }
+.flags li b { color: var(--text); font-weight: 700; }
+.flags li small { font-size: 12px; color: var(--muted); font-weight: 600; }
+.flags li:not(:last-child)::after { content: "→"; position: absolute; right: -8px; transform: translateX(50%); color: var(--muted); font-size: 12px; display: none; }
+
+/* Timeline-Typen */
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; margin: -6px 0 26px; font-size: 14px; font-weight: 600; color: var(--muted); }
+.legend li { display: inline-flex; align-items: center; gap: 8px; }
+.legend li::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--dot); }
+.k-work, .t-work { --dot: var(--accent); }
+.k-edu,  .t-edu  { --dot: #8b5cf6; }
+.k-mil,  .t-mil  { --dot: #2f855a; }
+.k-own,  .t-own  { --dot: #e08a1e; }
+.timeline > li::before { border-color: var(--dot, var(--accent)); }
+.timeline .date { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.timeline .date .tag { margin: 0; }
+.ok { display: inline-block; vertical-align: 3px; margin-left: 6px; font-size: 12px; font-weight: 800; letter-spacing: .04em; padding: 3px 9px; border-radius: 999px; background: rgba(47, 191, 113, .15); color: #1f9d5a; }
+@media (prefers-color-scheme: dark) { .ok { color: #4ade80; } }
+.t-edu .meta { color: #7c4ddb; }
+@media (prefers-color-scheme: dark) { .t-edu .meta { color: #b197fc; } }
+@media (min-width: 960px) { .resume__side { position: sticky; top: calc(var(--nav-h) + 24px); align-self: start; } }
+.mottos .container { grid-template-columns: 1fr !important; text-align: center; }
+.mottos blockquote { max-width: 30em; margin: 0 auto; }
