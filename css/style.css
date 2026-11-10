@@ -347,3 +347,11 @@ html, body { overflow-x: clip; }
 @media (min-width: 960px) { .resume__side { position: sticky; top: calc(var(--nav-h) + 24px); align-self: start; } }
 .mottos .container { grid-template-columns: 1fr !important; text-align: center; }
 .mottos blockquote { max-width: 30em; margin: 0 auto; }
+
+/* Logo */
+.brand { display: inline-flex; align-items: center; gap: 10px; }
+.brand__logo { width: 30px; height: 35px; flex: none; }
+.brand__hex { fill: var(--accent); }
+.brand__kn { fill: currentColor; }
+.brand .brand__name { color: var(--text); font-size: 17px; font-weight: 800; letter-spacing: -.02em; }
+@media (max-width: 400px) { .brand__name { display: none; } }
