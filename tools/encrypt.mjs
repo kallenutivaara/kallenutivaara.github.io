@@ -2,13 +2,16 @@
 // Nutzung:  SITE_PASSWORD='...' node tools/encrypt.mjs
 // Das Passwort wird nie gespeichert oder committet.
 import { readFileSync, writeFileSync } from 'node:fs';
-import { webcrypto as crypto } from 'node:crypto';
+import { webcrypto as crypto, createHash } from 'node:crypto';
 
 const password = process.env.SITE_PASSWORD;
 if (!password) { console.error('Bitte SITE_PASSWORD setzen.'); process.exit(1); }
 
 const ITER = 600000;
-const plain = readFileSync(new URL('../_source/index.html', import.meta.url), 'utf8');
+// Cache-Busting: CSS/JS bekommen einen Hash, damit Browser nach einem Update nie alte Dateien mit neuem HTML mischen.
+const hashOf = (rel) => createHash('sha256').update(readFileSync(new URL('../' + rel, import.meta.url))).digest('hex').slice(0, 10);
+const plain = readFileSync(new URL('../_source/index.html', import.meta.url), 'utf8')
+  .replace(/(href|src)="(css\/style\.css|js\/main\.js)"/g, (_, attr, rel) => `${attr}="${rel}?v=${hashOf(rel)}"`);
 const salt = crypto.getRandomValues(new Uint8Array(16));
 const iv = crypto.getRandomValues(new Uint8Array(12));
 const baseKey = await crypto.subtle.importKey('raw', new TextEncoder().encode(password), 'PBKDF2', false, ['deriveKey']);
