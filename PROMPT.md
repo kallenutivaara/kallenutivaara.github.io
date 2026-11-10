@@ -55,7 +55,7 @@ In Finnland geschmiedet, in Deutschland aufgewachsen, in der Schweiz zu Hause. I
 
 **Kontakt**
 - Kalle Nutivaara
-- Moosbrunnenstrasse 114, 8426 Lufingen
+- Wohnort: Zürich, Schweiz (keine genaue Adresse auf der Website)
 - +41 78 859 78 40
 - kalle.nutivaara@gmail.com
 - Instagram: https://www.instagram.com/kallenutivaara/
@@ -107,7 +107,6 @@ Darstellung als Tags/Chips, **nicht** als Prozentbalken.
 
 > «Knowledge isn't power; knowledge is only potential power. Action is power.»
 
-> «To be in the 1%, you have to do what the 99% won't.»
 
 ### Referenzen
 
